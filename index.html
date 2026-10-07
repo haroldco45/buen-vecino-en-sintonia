@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buen Vecino en Sintonía — Radio Policía Nacional Caucasia</title>
+<meta name="description" content="El programa de convivencia ciudadana de Radio Policía Nacional Caucasia: 15 minutos, dos veces por semana, con la app Buen Vecino Bajo Cauca.">
+<meta name="theme-color" content="#EB0A1E">
+<meta name="author" content="Vibras Positivas HM">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Buen Vecino en Sintonía">
+<meta property="og:title" content="Buen Vecino en Sintonía — Radio Policía Nacional Caucasia">
+<meta property="og:description" content="La convivencia explicada en el idioma del barrio. 15 minutos, dos veces por semana. Ruido, mascotas, basuras, multas 2026 y el Pacto del Buen Vecino.">
+<meta property="og:url" content="https://haroldco45.github.io/buen-vecino-en-sintonia/">
+<meta property="og:image" content="https://haroldco45.github.io/buen-vecino-en-sintonia/og-image.png?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Buen Vecino en Sintonía, programa de Radio Policía Nacional Caucasia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Buen Vecino en Sintonía — Radio Policía Nacional Caucasia">
+<meta name="twitter:description" content="La convivencia explicada en el idioma del barrio. 15 minutos, dos veces por semana.">
+<meta name="twitter:image" content="https://haroldco45.github.io/buen-vecino-en-sintonia/og-image.png?v=1">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --ink:#000000; --ink-2:#58595B; --line:#D8D8D8; --soft:#F2F2F2;
+  --red:#EB0A1E; --red-ink:#FFFFFF; --pill:#000000; --pill-ink:#FFFFFF;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#000000; --ink:#FFFFFF; --ink-2:#B5B6B8; --line:#333333; --soft:#161616;
+    --red:#FF2A3C; --pill:#FFFFFF; --pill-ink:#000000;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#000000; --ink:#FFFFFF; --ink-2:#B5B6B8; --line:#333333; --soft:#161616;
+  --red:#FF2A3C; --pill:#FFFFFF; --pill-ink:#000000;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.top b{font-weight:700;font-size:15px}
+.top span{color:var(--ink-2);font-size:14px}
+@media (max-width:560px){.top span{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr;gap:28px;padding:40px 0 34px;align-items:center}
+@media (min-width:820px){.hero{grid-template-columns:5fr 6fr;gap:48px;padding:64px 0 48px}}
+.logo-card{background:#fff;border-radius:24px;padding:22px;border:1px solid var(--line)}
+h1{font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:800;font-size:clamp(52px,10vw,104px);line-height:.92;letter-spacing:-.01em;margin:0 0 18px}
+h1 .l2{display:block;color:var(--red)}
+.lede{font-size:clamp(18px,2.2vw,21px);color:var(--ink-2);max-width:34ch;margin:0 0 22px}
+.when{display:inline-flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.chip{background:var(--soft);border-radius:999px;padding:7px 15px;font-weight:600;font-size:15px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 26px;border-radius:999px;font:700 16px/1 "Barlow",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn.pri{background:var(--red);color:var(--red-ink)}
+.btn.sec{background:var(--pill);color:var(--pill-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:active{transform:translateY(1px)}
+
+/* sections */
+section{padding:52px 0;border-top:1px solid var(--line)}
+h2{font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:800;font-size:clamp(34px,5vw,52px);line-height:1;margin:0 0 10px}
+.sub{color:var(--ink-2);max-width:60ch;margin:0 0 30px}
+
+/* dial */
+.dial{position:relative;padding:34px 0 0;user-select:none}
+.ruler{position:relative;height:44px;border-bottom:2px solid var(--ink)}
+.ticks{position:absolute;inset:0;background-image:repeating-linear-gradient(to right,var(--line) 0 2px,transparent 2px 100%);background-size:calc(100%/48) 14px;background-repeat:repeat-x;background-position:0 100%}
+.needle{position:absolute;top:-26px;bottom:-12px;width:4px;margin-left:-2px;background:var(--red);border-radius:2px;transition:left .45s cubic-bezier(.3,.7,.2,1);left:6.25%}
+.needle::before{content:"";position:absolute;top:-8px;left:-6px;width:16px;height:16px;border-radius:50%;background:var(--red)}
+.stations{display:grid;grid-template-columns:repeat(8,1fr);margin-top:14px}
+.st{appearance:none;background:none;border:0;color:var(--ink-2);font:700 15px/1.1 "Barlow",sans-serif;padding:8px 2px 10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;border-radius:12px}
+.st .n{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:800;line-height:1}
+.st .t{font-weight:600;font-size:12.5px;display:none}
+@media (min-width:760px){.st .t{display:block;text-align:center}}
+.st[aria-selected="true"]{color:var(--red)}
+.st:hover{color:var(--ink)}
+.st[aria-selected="true"]:hover{color:var(--red)}
+.ep{margin-top:26px;display:grid;grid-template-columns:1fr;gap:22px;background:var(--soft);border-radius:24px;padding:26px}
+@media (min-width:820px){.ep{grid-template-columns:5fr 4fr;padding:34px}}
+.ep .meta{color:var(--ink-2);font-weight:600;font-size:15px;margin:0 0 6px}
+.ep h3{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(30px,4vw,40px);line-height:1.02;margin:0 0 14px}
+.ep ul{margin:0;padding-left:20px}
+.ep li{margin:0 0 6px}
+.box{background:var(--bg);border-radius:18px;padding:18px 20px}
+.box + .box{margin-top:12px}
+.box h4{margin:0 0 4px;font-size:15px;font-weight:700}
+.box p{margin:0;color:var(--ink-2)}
+.box.mito h4{color:var(--red)}
+
+/* escaleta */
+.bar{display:flex;height:58px;border-radius:14px;overflow:hidden;margin:6px 0 18px}
+.seg{position:relative;border-right:2px solid var(--bg);background:var(--soft);display:flex;align-items:flex-end;padding:6px;font-size:11px;font-weight:700;color:var(--ink-2);overflow:hidden;white-space:nowrap}
+.seg.k{background:var(--ink);color:var(--bg)}
+.seg.r{background:var(--red);color:#fff}
+.seg:last-child{border-right:0}
+.esc{list-style:none;margin:0;padding:0}
+@media (min-width:760px){.esc{columns:2;column-gap:40px}}
+.esc li{break-inside:avoid;display:grid;grid-template-columns:118px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.esc time{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.esc b{display:block}
+.esc span{color:var(--ink-2);font-size:15px}
+
+/* participe */
+.ways{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:760px){.ways{grid-template-columns:repeat(3,1fr)}}
+.way{border:2px solid var(--ink);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.way h3{margin:0;font-size:21px;font-weight:700}
+.way p{margin:0;color:var(--ink-2);flex:1}
+.way .btn{align-self:flex-start;min-height:44px;padding:0 20px;font-size:15px}
+
+/* cierre */
+.quote{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(32px,5.4vw,58px);line-height:1;max-width:18ch;margin:0 0 26px}
+footer{padding:34px 0 40px;border-top:1px solid var(--line);color:var(--ink-2);font-size:14px}
+footer p{margin:0 0 8px;max-width:72ch}
+footer b{color:var(--ink)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--pill);color:var(--pill-ink);padding:12px 20px;border-radius:999px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.needle{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Radio Policía Nacional · Caucasia</b>
+    <span>Con la app Buen Vecino Bajo Cauca</span>
+  </header>
+
+  <div class="hero">
+    <div class="logo-card"><img src="logo.png" alt="Radio Policía Nacional, siempre en sintonía" width="501" height="243"></div>
+    <div>
+      <h1>Buen Vecino <span class="l2">en Sintonía</span></h1>
+      <p class="lede">La ley de convivencia explicada en el idioma del barrio. Lo que dice, cuánto cuesta y qué hacer antes de pelear con el vecino.</p>
+      <div class="when">
+        <span class="chip" id="horario"></span>
+        <span class="chip">15 minutos</span>
+        <span class="chip" id="frecuencia" hidden></span>
+      </div>
+      <div class="ctas">
+        <a class="btn pri" id="ctaWa" href="#" target="_blank" rel="noopener">Escribir al programa</a>
+        <a class="btn ghost" id="ctaApp" href="#" target="_blank" rel="noopener">Abrir la app</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Temporada 1: ocho programas</h2>
+    <p class="sub">Un mes, dos programas por semana. Toque un número para sintonizar el tema.</p>
+    <div class="dial">
+      <div class="ruler"><div class="ticks"></div><div class="needle" id="needle"></div></div>
+      <div class="stations" role="tablist" aria-label="Programas de la temporada" id="stations"></div>
+    </div>
+    <div class="ep" id="ep" role="tabpanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Así suenan los 15 minutos</h2>
+    <p class="sub">Todos los programas siguen el mismo orden, para que usted sepa en qué momento participar.</p>
+    <div class="bar" id="bar" aria-hidden="true"></div>
+    <ol class="esc" id="esc"></ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Participe</h2>
+    <p class="sub">En cada programa hay una pregunta al aire. Las mejores respuestas se leen en la emisión.</p>
+    <div class="ways">
+      <div class="way"><h3>Por WhatsApp</h3><p>Mande su respuesta, su pregunta o el problema de convivencia que más se repite en su cuadra.</p><a class="btn sec" id="wayWa" href="#" target="_blank" rel="noopener">Escribir</a></div>
+      <div class="way"><h3>En la app</h3><p>Consulte comportamientos, multas 2026, cartas listas para su vecino y las líneas de emergencia.</p><a class="btn sec" id="wayApp" href="#" target="_blank" rel="noopener">Abrir Buen Vecino</a></div>
+      <div class="way"><h3>En su cuadra</h3><p>Comparta esta página en el grupo del barrio y lleven el Pacto del Buen Vecino a la próxima asamblea.</p><button class="btn sec" id="wayShare" type="button">Compartir por WhatsApp</button></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="quote">Un barrio que dialoga casi nunca necesita comparendos.</p>
+    <div class="ctas">
+      <button class="btn pri" id="share2" type="button">Compartir el programa</button>
+      <button class="btn ghost" id="copy" type="button">Copiar el enlace</button>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <p><b>Buen Vecino en Sintonía</b> es un espacio de Radio Policía Nacional Caucasia con el apoyo de la app Buen Vecino Bajo Cauca, Biblioteca Legal Colombiana, Volumen 11.</p>
+    <p>Material pedagógico basado en la Ley 1801 de 2016. No reemplaza el texto oficial de la ley. Valores de multas de 2026, calculados sobre el salario mínimo de $1.750.905.</p>
+    <p>Desarrollada por <b>Vibras Positivas HM</b>. Derechos de autor reservados. Caucasia, Antioquia.</p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===== CONFIGURACIÓN: cambie estos datos cuando la emisora confirme ===== */
+var CONFIG = {
+  horario: "Dos veces por semana · muy pronto",   // ej.: "Martes y viernes · 6:30 p. m."
+  frecuencia: "",                                 // ej.: "92.4 FM" (vacío = no se muestra)
+  whatsapp: "573117700431",                       // número que recibe la participación
+  app: "https://buen-vecino-bajo-cauca.netlify.app/",
+  sitio: "https://haroldco45.github.io/buen-vecino-en-sintonia/"
+};
+/* ======================================================================= */
+
+var EPS = [
+ {t:"La ley no busca cobrar, busca corregir", w:"Semana 1 · primera emisión",
+  a:["Para qué existe el Código de Policía y Convivencia","El artículo 26: convivir bien es deber de todos","Los cuatro bienes que protege: seguridad, tranquilidad, ambiente y salud pública"],
+  m:"«Si llega la Policía, siempre me multan». Falso: antes de la multa están la amonestación, la actividad pedagógica y otras medidas.",
+  c:"Salude esta semana a un vecino con el que no habla."},
+ {t:"El ruido y las fiestas", w:"Semana 1 · segunda emisión",
+  a:["Qué dice el artículo 33 sobre ruido que afecta al vecindario","Qué puede hacer la Policía: disolver la fiesta, apagar el equipo, multa tipo 3","Cómo pedirle a un vecino que baje la música sin pelear"],
+  m:"«Hasta las diez se puede hacer bulla». Falso: la ley no regala una hora libre; si afecta al vecino, no se debe.",
+  c:"Si va a hacer fiesta, avísele al vecino antes."},
+ {t:"Mascotas en el barrio", w:"Semana 2 · primera emisión",
+  a:["No recoger los excrementos: multa tipo 1","Perros de manejo especial: bozal, traílla y nunca con un menor","El dueño responde por lo que haga su animal en la calle"],
+  m:"«Si un perro me molesta, puedo envenenarlo». Falso y grave: el maltrato animal es delito (Ley 1774 de 2016).",
+  c:"No salga a la calle con su perro sin bolsa y sin correa."},
+ {t:"Basuras y espacio público", w:"Semana 2 · segunda emisión",
+  a:["Sacar la basura solo en el horario de la ruta (artículo 111)","Por qué quemar basura enferma a los vecinos","El andén es del peatón: ocuparlo es multa tipo 1"],
+  m:"«Si barro el andén, puedo poner lo que quiera ahí». Falso: se cuida, pero no se adueña.",
+  c:"Saque la bolsa solo la noche antes de que pase el carro."},
+ {t:"Licor en la calle y riñas", w:"Semana 3 · primera emisión",
+  a:["Qué decidió la Corte en la sentencia C-253 de 2019","Dónde sigue habiendo restricciones y la venta de licor a menores","Reñir es contrario a la convivencia; si hay lesiones, es delito"],
+  m:"«Si me insultan, tengo derecho a responder con un golpe». Falso: el golpe convierte a la víctima en agresor.",
+  c:"Si la discusión se calienta, váyase. Irse a tiempo también es de valientes."},
+ {t:"Cuánto cuesta: multas 2026", w:"Semana 3 · segunda emisión",
+  a:["Tipo 1: $233.454 · Tipo 2: $466.908","Tipo 3: $933.816 · Tipo 4: $1.867.632","Pronto pago con 50% y cambio por actividad pedagógica en tipos 1 y 2"],
+  m:"«Si no pago el comparendo, eso se olvida». Falso: queda registrado, genera cobro y bloquea trámites como contratar con el Estado.",
+  c:"Comparta la pestaña Multas 2026 en el grupo de su cuadra."},
+ {t:"Qué hacer antes de llamar a la Policía", w:"Semana 4 · primera emisión",
+  a:["La ruta en seis pasos: diálogo, constancia, Junta, cuadrante, Inspección, Fiscalía","Las cuatro cartas que genera la app","Las líneas 123, 119, 155 y 141, y el número del cuadrante"],
+  m:"«Si tengo razón, puedo publicar al vecino en el grupo». Falso: exponer sin pruebas puede ser delito.",
+  c:"Dé el primer paso: hable con su vecino en buen tono."},
+ {t:"El Pacto del Buen Vecino", w:"Semana 4 · segunda emisión",
+  a:["Los diez acuerdos que el barrio vota en asamblea","Cómo llevar el Pacto a la Junta de Acción Comunal","Gran concurso de cierre de temporada"],
+  m:"«Un manual de convivencia de barrio es ley». Falso en barrios abiertos; lo que funciona es un pacto voluntario firmado.",
+  c:"Marque en la app los acuerdos que ya cumple y rete a sus vecinos."}
+];
+
+var ESC = [
+ {s:40,  l:"Entrada", d:"Cabezote y cortina", k:"k"},
+ {s:80,  l:"Saludo", d:"El tema y la pregunta del día"},
+ {s:120, l:"Así pasa en el barrio", d:"Dramatizado con vecinos de ficción", k:"r"},
+ {s:240, l:"Lo que dice la ley", d:"La norma explicada en sencillo"},
+ {s:30,  l:"Cuña", d:"La app Buen Vecino Bajo Cauca", k:"k"},
+ {s:150, l:"Mito o verdad", d:"Creencias que le pueden salir caras"},
+ {s:150, l:"Pregunta al aire", d:"Usted participa por WhatsApp o llamada", k:"r"},
+ {s:60,  l:"El compromiso", d:"Una tarea para practicar en casa"},
+ {s:30,  l:"Salida", d:"Despedida y próximo tema", k:"k"}
+];
+
+function $(id){return document.getElementById(id)}
+function wa(text){return "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(text)}
+function shareUrl(){return CONFIG.sitio.indexOf("http")===0?CONFIG.sitio:location.href}
+function shareText(){return "\uD83D\uDCFB *Buen Vecino en Sintonía*\nEl programa de convivencia de Radio Policía Nacional Caucasia. "+CONFIG.horario+", 15 minutos.\nRuido, mascotas, basuras, multas 2026 y el Pacto del Buen Vecino.\n\uD83D\uDC49 "+shareUrl()}
+function toast(t){var el=$("toast");el.textContent=t;el.classList.add("on");setTimeout(function(){el.classList.remove("on")},2200)}
+
+$("horario").textContent = CONFIG.horario;
+if(CONFIG.frecuencia){ $("frecuencia").textContent = CONFIG.frecuencia; $("frecuencia").hidden=false; }
+var waMsg = wa("Hola, escucho Buen Vecino en Sintonía. Mi barrio es: ");
+$("ctaWa").href = waMsg; $("wayWa").href = waMsg;
+$("ctaApp").href = CONFIG.app; $("wayApp").href = CONFIG.app;
+function doShare(){ window.open("https://wa.me/?text="+encodeURIComponent(shareText()),"_blank","noopener"); }
+$("wayShare").onclick = doShare; $("share2").onclick = doShare;
+$("copy").onclick = function(){
+  var u=shareUrl();
+  if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){toast("Enlace copiado")},function(){toast(u)})} else toast(u);
+};
+
+/* dial */
+var st=$("stations");
+st.innerHTML = EPS.map(function(e,i){
+  return '<button class="st" role="tab" id="st'+i+'" aria-controls="ep" aria-selected="false" data-i="'+i+'"><span class="n">'+(i+1)+'</span><span class="t">'+e.t+'</span></button>';
+}).join("");
+function tune(i, focus){
+  var e=EPS[i];
+  [].forEach.call(st.children,function(b,j){b.setAttribute("aria-selected", j===i?"true":"false"); b.tabIndex = j===i?0:-1;});
+  $("needle").style.left = ((i+0.5)/EPS.length*100)+"%";
+  $("ep").setAttribute("aria-labelledby","st"+i);
+  $("ep").innerHTML =
+    '<div><p class="meta">Programa '+(i+1)+' · '+e.w+'</p><h3>'+e.t+'</h3><ul>'+e.a.map(function(x){return "<li>"+x+"</li>"}).join("")+'</ul></div>'+
+    '<div><div class="box mito"><h4>Mito del día</h4><p>'+e.m+'</p></div><div class="box"><h4>El compromiso</h4><p>'+e.c+'</p></div></div>';
+  if(focus) st.children[i].focus();
+}
+st.addEventListener("click",function(ev){var b=ev.target.closest(".st"); if(b) tune(+b.dataset.i)});
+st.addEventListener("keydown",function(ev){
+  var cur=[].findIndex.call(st.children,function(b){return b.getAttribute("aria-selected")==="true"});
+  if(ev.key==="ArrowRight"){ev.preventDefault();tune((cur+1)%EPS.length,true)}
+  if(ev.key==="ArrowLeft"){ev.preventDefault();tune((cur-1+EPS.length)%EPS.length,true)}
+});
+tune(0);
+
+/* escaleta */
+var tot=0; $("bar").innerHTML = ESC.map(function(x){var w=x.s/900*100; return '<div class="seg '+(x.k||"")+'" style="width:'+w+'%">'+(w>12?x.l:"")+'</div>'}).join("");
+function mmss(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+$("esc").innerHTML = ESC.map(function(x){var a=tot; tot+=x.s; return '<li><time>'+mmss(a)+'–'+mmss(tot)+'</time><div><b>'+x.l+'</b><span>'+x.d+'</span></div></li>'}).join("");
+
+if("serviceWorker" in navigator && location.protocol==="https:"){navigator.serviceWorker.register("sw.js").catch(function(){});}
+</script>
+</body>
+</html>
